@@ -18,11 +18,17 @@ Given the small sample size of the dataset, this analysis primarily focuses on u
 ## 3. Tech Stack
 **Language(s):** Python
 
-**Libraries:**
+**Libraries:** Pandas, Scikit-Learn
 
 ## 4. Resuls & Performance
 **Accuracy:** 1.0
 
-**Precision/Recall:** 1.0
+**Precision/Recall:** 1.0/1.0
 
-**Key Takeaway:** 
+**Key Takeaway:** While the algorithm achieved perfect metrics, it is highly unlikely that it is so, most likley due to overfitting and a limited sample size.
+
+## Step 5. Model Validation
+The model's robustness was validated using three approaches:
+1. Cross validation: Assessed the model's performance stability across multiple data splits to ensure metrics weren't skewed by a lucky train-test split.
+2. **Class Imbalance Check:** Evaluated the target variable distribution. While the dataset exhibited class imbalance, this is representative of real-world scenarios and was accounted for during analysis.
+3. **Data leakage & feature importance analysis**: The analysis revealed an overwhelming reliance on `credit_score` compared to all other variables. Because the dataset only contains 60 rows, this extreme focus makes overfitting highly likely.
