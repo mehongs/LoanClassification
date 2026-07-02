@@ -9,7 +9,7 @@ Given the small sample size of the dataset, this analysis primarily focuses on u
 
 **Subset Separation:** Utilized `train_test_split` to divide the dataset into training and testing subsets with a 80/20 split.
 
-**Nodel Training:** Fit a binary Logistic Regression model using `scikit-learn` to establish coefficients for each feature.
+**Model Training:** Fit a binary Logistic Regression model using `scikit-learn` to establish coefficients for each feature.
 
 **Model Prediction:** Created a new, unseen testing subset to be used for prediction.
 
@@ -20,12 +20,12 @@ Given the small sample size of the dataset, this analysis primarily focuses on u
 
 **Libraries:** Pandas, Scikit-Learn
 
-## 4. Resuls & Performance
+## 4. Results & Performance
 **Accuracy:** 1.0
 
 **Precision/Recall:** 1.0/1.0
 
-**Key Takeaway:** While the algorithm achieved perfect metrics, it is highly unlikely that it is so, most likley due to overfitting and a limited sample size.
+**Key Takeaway:** While the algorithm achieved perfect metrics, it is highly unlikely that it is so, most likely due to overfitting and a limited sample size.
 
 ## Step 5. Model Validation
 The model's robustness was validated using three approaches:
